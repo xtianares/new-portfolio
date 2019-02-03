@@ -92,9 +92,10 @@ a.social {
     margin: 5px;
 	color: #fff !important;
 	background-color: #ccc;
-	background-color: rgba(0,0,0,0.20);
+	background-color: rgba(0,0,0,0.3);
 	font-size: 22px;
 	text-align: center;
+	text-decoration: none;
     overflow: hidden;
     vertical-align: middle;
 	border: 0 !important;
@@ -137,59 +138,38 @@ a.social.tumblr:hover, a.social.tumblr:active { background-color: #529ECC; }
 	Typography
 ----------------------------------------------------------------------------- */
 h1, h2, h3, h4, h5 {
-	margin: 25px 0 15px 0;
-	padding: 0;
-	color: #444444;
-	font-family: 'Roboto Slab', 'Open Sans', 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
-	font-weight: 300 !important;
-	text-rendering: optimizeLegibility;
-	line-height: 1.3em;
+    /*margin: 25px 0 15px 0;*/
+    padding: 0;
+    font-family: 'Roboto Slab', 'Open Sans', 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+    font-weight: 300 !important;
+    text-rendering: optimizeLegibility;
+    line-height: 1.4;
 }
-h1, .h1 { font-size: 1.8em; margin-top: 0;}
-h2, .h2 { font-size: 1.5em; }
-h3, .h3 { font-size: 1.3em; }
+h1, .h1 { font-size: 1.602em; margin-top: 0; }
+h2, .h2 { font-size: 1.424em; }
+h3, .h3 { font-size: 1.266em; }
 h4, .h4 { font-size: 1.125em; }
 h5, .h5 { font-size: 1em; }
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #CC4433; }
-p { margin: 0 0 1em 0; }
-a { color: #CC4433; text-decoration: none; outline: none !important; }
-a:hover, a:active { /*text-decoration: underline;*/ border-width: 0 0 1px 0; border-style: dotted; -webkit-tap-highlight-color: rgba(0,0,0,0); }
-a.img:hover, a.img:active { text-decoration: none: border: 0; }
-ul, ol { margin-left: 35px; margin-top: 1em; margin-bottom: 1em; }
-h1 + ul, h2 + ul, h3 + ul, h4 + ul, h1 + ol, h2 + ol, h3 + ol, h4 + ol  { margin-top: 0; }
-ul { list-style: disc outside; }
-ol { list-style: decimal; }
-ul.check, ul.star, ul.carrot { margin-left: 20px; list-style: none outside; }
-ul.disc { list-style: disc outside; }
-ul.circle { list-style: circle outside; }
-ul.square { list-style: square outside; }
-ul.check li, ul.star li, ul.carrot li { padding: 0 0 0 22px; }
-ul.carrot li { padding: 0 0 0 16px; }
-ul.check > li:before, ul.star > li:before, ul.carrot > li:before { display: inline-block; margin-top: 3px; margin-left: -22px; width: 22px; content: "\e840"; height: inherit; color: #0099FF; font-family: 'icons'; font-size: 14px; vertical-align: top; font-weight: normal !important; }
-ul.star > li:before { margin-top: 2px; content: "\e834"; }
-ul.carrot > li:before { margin-top: 0; margin-left: -16px; width: 16px; content: "\00BB"; color: inherit; font-size: inherit; }
-ul.check li li, ul.star li li, ul.carrot li li { padding: 0; }
-ul ul, ul ol, ol ol, ol ul { margin: 5px 0 5px 30px; }
-ol ol { list-style: lower-alpha; }
-ol ul, ul ul { list-style: circle; }
-ul ol { list-style: decimal; }
-ul li, ol li { margin: 5px 0 5px 0; }
-dl dt { font-weight: bold; }
-
-@media only screen and (min-width: 37.5em) { /* roughtly 600px/16px - col_*_sm */
-    h1, .h1 { font-size: 2.15em; }
-	h2, .h2 { font-size: 1.75em; }
-	h3, .h3 { font-size: 1.45em; }
-	h4, .h4 { font-size: 1.2em; }
-	h5, .h5 { font-size: 1em; }
-	#content { word-wrap: break-word; overflow-wrap: break-word; }
+@media (min-width: 48em) { /* Medium devices (tablets, 768px and up) */
+    h1, .h1 { font-size: 1.8em; }
+    h2, .h2 { font-size: 1.55em; }
+    h3, .h3 { font-size: 1.32em; }
+    h4, .h4 { font-size: 1.125em; }
+    h5, .h5 { font-size: 1em; }
 }
-@media only screen and (min-width: 56.25em) { /* roughtly 900px/16px - col_*_lg */
-	h1, .h1 { font-size: 2.5em; }
-	h2, .h2 { font-size: 2em; }
-	h3, .h3 { font-size: 1.75em; }
-	h4, .h4 { font-size: 1.5em; }
-	h5, .h5 { font-size: 1.25em; }
+@media (min-width: 62em) { /* Large devices (desktops, 992px and up) */
+    h1, .h1 { font-size: 2.074em; }
+    h2, .h2 { font-size: 1.728em; }
+    h3, .h3 { font-size: 1.44em; }
+    h4, .h4 { font-size: 1.2em; }
+    h5, .h5 { font-size: 1.1em; }
+}
+@media (min-width: 75em) { /* Extra large devices (large desktops, 1200px and up) */
+    h1, .h1 { font-size: 2.441em; }
+    h2, .h2 { font-size: 1.953em; }
+    h3, .h3 { font-size: 1.563em; }
+    h4, .h4 { font-size: 1.25em; }
+    h5, .h5 { font-size: 1.1em; }
 }
 /* ----------------------------------------------------------------------------
 	Start Page Styles
@@ -202,7 +182,7 @@ body {
     font-family: 'Open Sans', 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
     text-rendering: optimizeLegibility;
     color: #444;
-    background-color: #56A8E3;
+    background-color: #ccc;
     background-image: linear-gradient( 135deg, #FAD7A1 10%, #E96D71 100%);
     background-size: cover;
     background-position: 50% 50%;
@@ -216,9 +196,9 @@ body {
     max-width: 1230px;
 }
 #banner-wrap {
-	background: #1abc9c;
+	background: #ccc;
 	/*background: #39B0FF;*/
-    background: #187fbc url(../images/header-bg.jpg) no-repeat fixed 50% 50% / cover;
+    background: #ccc url(../images/header-bg.jpg) no-repeat fixed 50% 50% / cover;
     /*background-image: linear-gradient(20deg, rgba(0, 51, 102, 0.65) 0px, rgba(29, 204, 172, 0.5) 50%, rgba(194, 102, 171, 0.8) 100%);*/
 	text-align: center;
 	position: relative;
@@ -240,7 +220,8 @@ body {
 	z-index: 0;
 }
 .banner {
-	min-height: 90vh;
+	height: 80vh;
+	min-height: 500px;
     max-height: 700px;
 	padding-top: 30px;
 	padding-bottom: 120px;
@@ -270,6 +251,10 @@ body {
     position: relative;
     z-index: 5;
 }
+#profile {
+	position: relative;
+	z-index: 2;
+}
 #intro-wrap:before {
 	content: '';
 	height: 50px;
@@ -281,6 +266,7 @@ body {
 	transform: skewY(-1.5deg);
 	-webkit-transform-origin: top left;
 	transform-origin: top left;
+	top: 0;
 }
 #intro-wrap:after {
 	content: '';
@@ -291,11 +277,9 @@ body {
     z-index: 0;
 	-webkit-transform: skewY(1.5deg);
 	transform: skewY(1.5deg);
-	-webkit-transform-origin: top right;
-	transform-origin: top right;
-}
-#intro h2 {
-    /*margin-top: 0;*/
+	-webkit-transform-origin: bottom left;
+	transform-origin: bottom left;
+	bottom: 0;
 }
 #intro #profile img {
     width: auto;
@@ -317,8 +301,8 @@ body {
     box-shadow: 0 0 1px rgba(0,0,0,0.25);
 }
 #profile {
-	padding-top: 80px;
-	padding-bottom: 5px;
+	padding-top: 100px;
+	padding-bottom: 20px;
 }
 #profile p {
     /*font-size: 1.2em;*/
@@ -329,7 +313,8 @@ body {
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 #portfolio-wrap {
-	padding-top: 40px;
+	padding-top: 60px;
+	padding-bottom: 10px;
 	background: #ebebeb url(../images/halftone.png);
     position: relative;
     z-index: 4;
@@ -343,11 +328,12 @@ body {
     z-index: 0;
 	-webkit-transform: skewY(-1.5deg);
 	transform: skewY(-1.5deg);
-	-webkit-transform-origin: top left;
-	transform-origin: top left;
+	-webkit-transform-origin: bottom right;
+	transform-origin: bottom right;
+	bottom: 0;
 }
 .card-deck {
-	padding-bottom: 20px;
+	padding-bottom: 5px;
 	width: 100%;
 	position: relative;
     z-index: 2;
@@ -360,9 +346,12 @@ body {
     width: 100%;
     max-width: calc(100% - 30px);
 }
+.card-deck .card h4 {
+    font-weight: 400 !important;
+}
 
 #footer-wrap {
-	padding-top: 60px;
+	padding-top: 50px;
     padding-bottom: 10px;
 	width: 100%;
     background: #187fbc url(../images/header-bg.jpg) no-repeat fixed 50% 50% / cover;
@@ -393,28 +382,7 @@ body {
 /* ----------------------------------------------------------------------------
     Page Media Queries
 ----------------------------------------------------------------------------- */
-@media (min-width: 576px) {
-	.card-deck .card {
-        max-width: calc(50% - 30px);
-    }
-
-}
-@media (min-width: 768px) {
-	.card-deck .card {
-        max-width: calc(33.333333% - 30px);
-    }
-
-}
-@media (min-width: 992px) {
-	.card-deck .card {
-        max-width: calc(25% - 30px);
-    }
-
-}
-@media (min-width: 1200px) {
-
-}
-
+/* banner text media queries */
 @media only screen and (min-width: 22.6em) { /* roughtly 360px/16px */
 	#banner-text { width: 85%; }
 }
@@ -424,8 +392,6 @@ body {
 }
 @media only screen and (min-width: 37.5em) { /* roughtly 600px/16px - col_*_sm */
 	#banner-text { font-size: 1.4em; width: 90%; }
-    #profile p { font-size: 1.2em; }
-
 }
 @media only screen and (min-width: 48em) { /* roughtly 768px/16px */
 	#banner-text { font-size: 1.5em; width: 100%; }
@@ -447,5 +413,24 @@ body {
 }
 @media only screen and (min-width: 76.875em) { /* roughtly 1230px/16px */
 	#banner-text { font-size: 2.15em; width: 100%; }
+}
+
+@media (min-width: 576px) {
+	#profile p { font-size: 1.2em; }
+	
+}
+@media (min-width: 768px) {
+	.card-deck .card {
+        max-width: calc(50% - 30px);
+    }
+
+}
+@media (min-width: 992px) {
+	.card-deck .card {
+        max-width: calc(33.333333% - 30px);
+    }
+
+}
+@media (min-width: 1200px) {
 
 }
