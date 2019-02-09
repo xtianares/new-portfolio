@@ -242,13 +242,13 @@ body {
 	font-size: 1.2em;
 	line-height: 2.35em;
 	font-family: 'Merriweather', Georgia, Tahoma, Arial, sans-serif;
-	font-weight: 300;
+	font-weight: 700;
 	text-shadow: 1px 1px 0 rgba(0,0,0,0.2), 2px 2px 0 rgba(0,0,0,0.2), 3px 3px 0 rgba(0,0,0,0.2);
 }
 #banner-text div span { width: auto; }
-#banner-text .large { font-size: 2.35em; color: #fff; }
-#banner-text .medium { font-size: 1.9em; }
-#banner-text .small { font-size: 1.4em; }
+#banner-text .large { font-size: 2.35em; color: #fff; font-weight: 700; }
+#banner-text .medium { font-size: 1.9em; font-weight: 700; }
+#banner-text .small { font-size: 1.4em; font-weight: 700; }
 #intro-wrap {
 	background-color: #fff;
     position: relative;
